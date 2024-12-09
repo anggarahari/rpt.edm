@@ -1,0 +1,84 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/sap/ZHCM_EDM_RPT_SRV/$metadata">
+        <edmx:Include Namespace="ZHCM_EDM_RPT_SRV"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="ZHCM_EDM_RPT_SRV.Report">
+                <Annotation Term="UI.SelectionFields">
+                    <Collection>
+                        <PropertyPath>OrganizationId</PropertyPath>
+                        <PropertyPath>TargetYear</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrganizationId"/>
+                            <PropertyValue Property="Label" String="{@i18n>buId}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrganizationName"/>
+                            <PropertyValue Property="Label" String="{@i18n>buName}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MetricsName"/>
+                            <PropertyValue Property="Label" String="{@i18n>metricsName}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MetricsDescription"/>
+                            <PropertyValue Property="Label" String="{@i18n>metricsDescriptione}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MetricsDescription"/>
+                            <PropertyValue Property="Label" String="{@i18n>metricsDescriptione}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TargetType"/>
+                            <PropertyValue Property="Label" String="{@i18n>targetType}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TargetYear"/>
+                            <PropertyValue Property="Label" String="{@i18n>targetYear}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TargetQ1"/>
+                            <PropertyValue Property="Label" String="{@i18n>targetQ1}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="AchievementQ1"/>
+                            <PropertyValue Property="Label" String="{@i18n>achievementQ1}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TargetQ2"/>
+                            <PropertyValue Property="Label" String="{@i18n>targetQ2}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="AchievementQ2"/>
+                            <PropertyValue Property="Label" String="{@i18n>achievementQ2}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TargetQ3"/>
+                            <PropertyValue Property="Label" String="{@i18n>targetQ3}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="AchievementQ3"/>
+                            <PropertyValue Property="Label" String="{@i18n>achievementQ3}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="TargetQ4"/>
+                            <PropertyValue Property="Label" String="{@i18n>targetQ4}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="AchievementQ4"/>
+                            <PropertyValue Property="Label" String="{@i18n>achievementQ4}"/>
+                        </Record>
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>

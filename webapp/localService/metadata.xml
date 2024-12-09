@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="ZHCM_EDM_RPT_SRV" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="Report" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="OrganizationId"/>
+                    <PropertyRef Name="TargetYear"/>
+                </Key>
+                <Property Name="OrganizationId" Type="Edm.String" Nullable="false" MaxLength="8" sap:unicode="false" sap:label="Business Unit" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetType" Type="Edm.String" MaxLength="5" sap:unicode="false" sap:label="Target Type" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="OrganizationName" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="BU Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetQ1" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Target Q1" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="AchievementQ1" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Achievement Q1" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="MetricsName" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Metrics Name" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetQ2" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Target Q2" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="Unit" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="UoM" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="AchievementQ2" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Achievement Q2" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetQuarter" Type="Edm.String" MaxLength="10" sap:unicode="false" sap:label="Target Quarter" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetQ3" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Target Q3" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetYear" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Target Year" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="AchievementQ3" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Achievement Q3" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="MetricsDescription" Type="Edm.String" MaxLength="80" sap:unicode="false" sap:label="Metrics Description" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="TargetQ4" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Target Q4" sap:creatable="false" sap:updatable="false"/>
+                <Property Name="AchievementQ4" Type="Edm.String" MaxLength="40" sap:unicode="false" sap:label="Achievement Q4" sap:creatable="false" sap:updatable="false"/>
+            </EntityType>
+            <EntityContainer Name="ZHCM_EDM_RPT_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
+                <EntitySet Name="ReportSet" EntityType="ZHCM_EDM_RPT_SRV.Report" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+            </EntityContainer>
+            <atom:link rel="self" href="http://sapwdp.sinarmasmining.com:8002/sap/opu/odata/sap/ZHCM_EDM_RPT_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+            <atom:link rel="latest-version" href="http://sapwdp.sinarmasmining.com:8002/sap/opu/odata/sap/ZHCM_EDM_RPT_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
