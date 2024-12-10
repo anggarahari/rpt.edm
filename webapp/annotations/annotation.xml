@@ -30,11 +30,7 @@
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="MetricsDescription"/>
-                            <PropertyValue Property="Label" String="{@i18n>metricsDescriptione}"/>
-                        </Record>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="MetricsDescription"/>
-                            <PropertyValue Property="Label" String="{@i18n>metricsDescriptione}"/>
+                            <PropertyValue Property="Label" String="{@i18n>metricsDescription}"/>
                         </Record>
                         <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="TargetType"/>

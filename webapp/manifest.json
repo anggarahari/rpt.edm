@@ -127,7 +127,7 @@
                             }
                         },
                         "tableSettings": {
-                            "type": "ResponsiveTable"
+                            "type": "AnalyticalTable"
                         },
                         "variantManagementHidden": true,
                         "subTitleIfVariantMgmtHidden": " "
