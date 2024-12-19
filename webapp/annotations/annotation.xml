@@ -12,6 +12,7 @@
                     <Collection>
                         <PropertyPath>OrganizationId</PropertyPath>
                         <PropertyPath>TargetYear</PropertyPath>
+                        <PropertyPath>OrganizationName</PropertyPath>
                     </Collection>
                 </Annotation>
                 <Annotation Term="UI.LineItem">
